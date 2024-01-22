@@ -56,7 +56,7 @@ System(
           const data = await Ytsearch(match);
           return await message.send(
             await GetYtv(data.url),
-            { caption: tiny('*made with 🤍*'), quoted: message.data },
+            { caption: tiny('*made with 𝗦𝗲𝘅𝘆 𝗧𝗵𝗼𝘂𝗴𝗵𝘁𝘀🫦*'), quoted: message.data },
             'video'
           );
         }
@@ -84,14 +84,14 @@ System(
         if (isUrl(matchUrl)) {
           return await message.send(
             await GetYtv(matchUrl),
-            { caption: tiny('*made with 🤍*'), quoted: message.data },
+            { caption: tiny('*made with 𝗦𝗲𝘅𝘆 𝗧𝗵𝗼𝘂𝗴𝗵𝘁𝘀🫦*'), quoted: message.data },
             'video'
           );
         } else {
           const data = await Ytsearch(match);
           return await message.send(
             await GetYtv(data.url),
-            { caption: tiny('*made with 🤍*'), quoted: message.data },
+            { caption: tiny('*made with 𝗦𝗲𝘅𝘆 𝗧𝗵𝗼𝘂𝗴𝗵𝘁𝘀🫦*'), quoted: message.data },
             'video'
           );
         }
@@ -113,7 +113,7 @@ System(
     try {
       match = match || message.reply_message.text;
       if (!match) {
-        return await message.reply('_Give a YouTube video *Url* or *Query*_');
+        return await message.reply('_*আরে ল্যাওড়া লিংক দে ভিডিওটার😤*_');
       } else {
         const matchUrl = extractUrlFromMessage(match);
         if (isUrl(matchUrl)) {
@@ -156,7 +156,7 @@ System(
     try {
       match = match || message.reply_message.text;
       if (!match) {
-        return await message.reply('_Give a YouTube video *Url* or *Query*_');
+        return await message.reply('_*আরে ল্যাওড়া লিংক দে ভিডিওটার😤*_');
       } else {
         const matchUrl = extractUrlFromMessage(match);
         if (isUrl(matchUrl)) {
@@ -181,7 +181,7 @@ System(
             audio: aud,
             mimetype: 'audio/mpeg',
           });
-          await download.edit(`_*Successfully downloaded ${link.title}*_`);
+          await download.edit(`_*ডাউনলোড হয়ে গেছে বাঁড়া ${link.title}*_`);
         }
       }
     } catch (error) {
@@ -198,7 +198,7 @@ System({
 }, async (message, match) => {
   try {
     if (!match) {
-      return await message.reply('_Give a *Query* to play the song or video_');
+      return await message.reply('*_কিছু লিখ দয়া করে গানটা বা ভিডিওটা চালানোর জন্য 😑_*');
     } else {
       if (isUrl(match)) {
         return await message.reply("_Only *Query* will work *e.g : heat waves*_");
