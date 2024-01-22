@@ -13,7 +13,7 @@ System({
 System({
         pattern: "help", 
         fromMe: isPrivate,
-        desc: "jarvis-md support", 
+        desc: "বাঁড়ার support", 
         type: "support",
 }, async (message, match) => {
        await Support(message);
