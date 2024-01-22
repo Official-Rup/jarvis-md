@@ -31,7 +31,7 @@ System({
 	return await message.reply("_Reply to a photo_");
 	let buff = await message.reply_message.download();
 	await message.setPP(message.user.jid, buff);
-	return await message.reply("_Profile Picture Updated_");
+	return await message.reply("_হয়ে গেছে বাল😒_");
 });
 
 System({
@@ -53,7 +53,7 @@ System({
 	return await message.reply("_Reply to a photo_");
 	let media = await message.reply_message.download();
 	await updateProfilePicture(media, message, message.user.jid);
-	return await message.reply("_Profile Picture Updated_");
+	return await message.reply("_হয়ে গেছে বাল😒_");
 });
 
 System({
